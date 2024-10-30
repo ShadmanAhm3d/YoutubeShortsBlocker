@@ -49,7 +49,7 @@ function createOverlay() {
     <h2 style="color: #ff0000; margin-bottom: 20px;">YouTube Shorts Notice</h2>
     <p>⚠️ You're about to enter YouTube Shorts!</p>
     <p style="font-size: 18px; margin-top: 15px;">
-      Remember: Shorts are designed to be addictive and can lead to prolonged, unproductive viewing sessions.
+      The Magic You Are Looking For IS In The Work You're Avoiding
     </p>
   `;
 
