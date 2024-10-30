@@ -1,6 +1,6 @@
 # 🚫 YouTube Shorts Blocker
 
-![YouTube Shorts Blocker Banner](imageForReadme.png)
+![YouTube Shorts Blocker Banner](./ImageForReadme.png)
 
 A Chrome extension designed to help users maintain productivity by preventing mindless YouTube Shorts consumption. Instead of getting caught in an endless scroll of short videos, this extension provides a friendly reminder and the option to return to regular YouTube content.
 
