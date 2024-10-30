@@ -1,4 +1,3 @@
-// content.js
 let overlayShown = false;
 
 // Set up connection check listener

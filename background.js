@@ -1,9 +1,9 @@
-// background.js
 function isShortsUrl(url) {
   return url.includes('youtube.com/shorts/') || 
          (url.includes('youtube.com') && url.includes('#shorts'));
 }
 
+//TODO: Configure it for Instagram,Facebook etc
 async function sendMessageToTab(tabId, message) {
   try {
     // First, check if we can connect to the tab
@@ -24,6 +24,7 @@ async function sendMessageToTab(tabId, message) {
 }
 
 // Listen for tab updates
+//TODO: ab update kaise hoga?
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && isShortsUrl(tab.url)) {
     sendMessageToTab(tabId, { action: "showOverlay" });
@@ -31,6 +32,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 });
 
 // Listen for navigation state changes (for single-page app navigation)
+//TODO: ek listener cahiye yaha jo listen krskate url ko
 chrome.webNavigation.onHistoryStateUpdated.addListener((details) => {
   if (details.frameId === 0 && isShortsUrl(details.url)) {
     sendMessageToTab(details.tabId, { action: "showOverlay" });
